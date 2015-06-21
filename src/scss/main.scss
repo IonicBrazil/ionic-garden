@@ -1,0 +1,7 @@
+@import "main2";
+
+// The path for our ionicons font files, relative to the built CSS in src/scss
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+
+// Include all of Ionic
+@import "src/lib/ionic/scss/ionic";
