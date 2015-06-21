@@ -11,5 +11,6 @@ Your Ionic project is ready to go! Some quick tips:
 1. Simulate your app: `ionic emulate <PLATFORM>`
 1. Run your app on a device: `ionic run <PLATFORM>`
 1. Package an app using Ionic package service: `ionic package <MODE> <PLATFORM>`
+1. Remove generated file: `rm -rf node_modules platforms plugins`
 
 For more help use `ionic --help` or `ionic docs`
