@@ -24,7 +24,7 @@ var installModule = function (modulePath) {
     ted.say.happy(cwd)
   )
 
-  var installing = exec('npm', ['install', '-d'], {
+  var installing = exec('npm', ['install', '-d', '-s'], {
     cwd: cwd
   }, function (err, out, erout) {
     // Good output
