@@ -6,6 +6,7 @@ var sass = require('gulp-sass');
 var minifyCss = require('gulp-minify-css');
 var rename = require('gulp-rename');
 var sh = require('shelljs');
+var exec = require('child_process').execFile
 
 var paths = {
   sass: ['./scss/{,*/}*.scss']
@@ -29,6 +30,10 @@ gulp.task('sass', function(done) {
 
 gulp.task('watch', function() {
   gulp.watch(paths.sass, ['sass']);
+
+  var child = exec('./scripts/watch/watch.js')
+
+  child.stdout.on('data', console.log)
 });
 
 gulp.task('install', ['git-check'], function() {

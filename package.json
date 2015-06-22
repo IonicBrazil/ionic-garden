@@ -7,7 +7,8 @@
     "gulp-sass": "^2.0.x",
     "gulp-concat": "^2.5.x",
     "gulp-minify-css": "^1.1.x",
-    "gulp-rename": "^1.2.x"
+    "gulp-rename": "^1.2.x",
+    "gulp-batch": "^1.0.x"
   },
   "devDependencies": {
     "bower": "^1.4.x",
