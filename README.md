@@ -21,3 +21,8 @@ Now lets install our npm minions, to do the dirty work for us
 ```sh
 npm run install-submodules
 ```
+
+Run the project on your browser
+```sh
+ionic serve
+```
