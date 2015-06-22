@@ -9,8 +9,14 @@
     <!-- compiled css output -->
     <link href="css/ionic.app.css" rel="stylesheet">
 
-    <!-- ionic/angularjs js -->
-    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="js/load-ionic.js"></script>
+    <script>
+     // Make sure Ionic was loaded
+     if (!window.ionic) {
+      document.write('<script src="lib/ionic/js/ionic.bundle.js"><\/script>')
+      console.log('Ionic not loaded properly, loading local copy')
+     }
+    </script>
 
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
