@@ -21,7 +21,7 @@
 
   if (options.ionic === 'build') {
     toLoadSrc = 'lib/ionic/local/ionic.bundle.js'
-  } else if (options.ionic === 'bower' || !options.ionic) {
+  } else if (options.ionic === 'local' || !options.ionic) {
     toLoadSrc = 'lib/ionic/js/ionic.bundle.js'
   } else {
     // Use options.ionic as ionic version
