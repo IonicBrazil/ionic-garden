@@ -7,3 +7,4 @@ plugins/
 www/css/ionic.app.css
 www/css/ionic.app.min.css
 www/lib/
+npm-debug.log
