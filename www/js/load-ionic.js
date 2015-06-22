@@ -2,8 +2,14 @@
 
   var options = (function () {
     // Holy shit
-    var optionsArray = location.href.split('?')[1].split('#')[0].split('=')
+    var optionsArray
     var result = {}
+
+    try {
+      optionsArray = location.href.split('?')[1].split('#')[0].split('=')
+    } catch (e) {
+      return {}
+    }
 
     optionsArray.forEach(function (value, index) {
       // 0 is a property name and 1 the value of 0
