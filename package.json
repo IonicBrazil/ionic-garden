@@ -12,7 +12,14 @@
   "devDependencies": {
     "bower": "^1.4.x",
     "gulp-util": "^3.0.x",
-    "shelljs": "^0.5.x"
+    "shelljs": "^0.5.x",
+    "yargs": "^3.12.x",
+    "shelljs": "^0.5.x",
+    "colors": "^1.1.x",
+    "glob":"^5.0.x"
+  },
+  "scripts": {
+    "install-submodules": "./scripts/install/install-submodules.js"
   },
   "cordovaPlugins": [
     "cordova-plugin-device",
