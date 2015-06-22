@@ -20,7 +20,8 @@
     "glob":"^5.0.x"
   },
   "scripts": {
-    "install-submodules": "./scripts/install/install-submodules.js"
+    "install-submodules": "./scripts/install/install-submodules.js",
+    "postinstall": "gulp install"
   },
   "cordovaPlugins": [
     "cordova-plugin-device",
