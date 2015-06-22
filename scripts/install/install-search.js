@@ -17,7 +17,7 @@ var findModulesAndReturnPaths = function (opt, callback) {
 
   // Hello log
   console.log(
-    ted.say.happy('Humm lets me see your'),
+    ted.say.happy('Humm let me see your'),
     ted.say.path(opt.cwd),
     ted.say.happy('folder')
   )
