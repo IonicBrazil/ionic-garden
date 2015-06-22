@@ -1,0 +1,4 @@
+[submodule "modules/ionic"]
+	path = modules/ionic
+	url = git@github.com:driftyco/ionic.git
+  branch = master
