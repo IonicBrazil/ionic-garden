@@ -1,16 +1,23 @@
-Your Ionic project is ready to go! Some quick tips:
+# Ionic Garden
 
-1. cd into your project: `$ cd ionic-garden`
-1. Setup this project to use Sass: `ionic setup sass`
-1. Develop in the browser with live reload: `ionic serve`
-1. Add a platform (ios or Android): `ionic platform add ios [android]`
-  1. Note: iOS development requires OS X currently
-  See the Android Platform Guide for full Android installation instructions:
-  https://cordova.apache.org/docs/en/edge/guide_platforms_android_index.md.html
-1. Build your app: `ionic build <PLATFORM>`
-1. Simulate your app: `ionic emulate <PLATFORM>`
-1. Run your app on a device: `ionic run <PLATFORM>`
-1. Package an app using Ionic package service: `ionic package <MODE> <PLATFORM>`
-1. Remove generated file: `rm -rf node_modules platforms plugins`
+Yet another way to do my job with Ionic Framework
 
-For more help use `ionic --help` or `ionic docs`
+## Run forest Run!
+
+To run this project, first lets clone it, with special commands when using git submodules
+
+```sh
+git clone --recursive git@github.com:felquis/ionic-garden
+```
+
+Dependencies
+
+```sh
+npm install -d
+```
+
+Now lets install our npm minions, to do the dirty work for us
+
+```sh
+npm run install-submodules
+```
