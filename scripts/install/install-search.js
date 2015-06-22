@@ -4,6 +4,7 @@
 var ted = require('../ted')
 var sh = require('shelljs')
 var blog = require('glob')
+var path = require('canonical-path')
 
 // @opt
 //  @opt.cwd - Directory to use, default is `./modules`
@@ -22,7 +23,7 @@ var findModulesAndReturnPaths = function (opt, callback) {
     ted.say.happy('folder')
   )
 
-  blog(opt.cwd + '/{,*/}package.json', {}, function (err, files) {
+  blog(path.join(opt.cwd, '/{,*/}package.json'), {}, function (err, files) {
     // I'm not sure if it need a comment, but it's an error
     // I don't know how to simulate
     if (err) {
