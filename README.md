@@ -45,6 +45,8 @@ It'll load Ionic from `//code.ionicframework.com/1.0.0-rc.4/js/ionic.bundle.min.
 
 You can choose a version at [code.ionicframework.com](http://code.ionicframework.com/), if not used, it will load 'local' by default
 
+It doesn't work with `ionic serve --lab` yet
+
 ## Edit Ionic source code
 
 Open `js` and `scss` folder of `./modules/ionic/` and change Ionic source, `ionic serve` will run `gulp bundle` inside ionic source, and it will reload in your browser.
