@@ -26,7 +26,7 @@
   var toLoadSrc;
 
   if (options.ionic === 'build') {
-    toLoadSrc = 'lib/ionic/local/ionic.bundle.js'
+    toLoadSrc = 'lib/ionic/build/js/ionic.bundle.js'
   } else if (options.ionic === 'local' || !options.ionic) {
     toLoadSrc = 'lib/ionic/js/ionic.bundle.js'
   } else {
