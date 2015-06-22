@@ -1,16 +1,16 @@
 # Ionic Garden
 
-Yet another way to do my job with Ionic Framework
+This project is for every ionite who wants to play with Ionic's Source
 
-## Run forest Run!
+## Run Ionites, Run!
 
-To run this project, first lets clone it, with special commands when using git submodules
+To run this project, first lets clone it, with the special `--recursive` flag to bring us submodules sources
 
 ```sh
 git clone --recursive git@github.com:felquis/ionic-garden
 ```
 
-Dependencies
+Install dependencies
 
 ```sh
 npm install -d
