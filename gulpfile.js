@@ -5,6 +5,7 @@ var concat = require('gulp-concat');
 var sass = require('gulp-sass');
 var minifyCss = require('gulp-minify-css');
 var rename = require('gulp-rename');
+var jscs = require('gulp-jscs');
 var sh = require('shelljs');
 var exec = require('child_process').execFile
 
@@ -26,6 +27,11 @@ gulp.task('sass', function(done) {
     .pipe(rename({ extname: '.min.css' }))
     .pipe(gulp.dest('./www/css/'))
     .on('end', done);
+});
+
+gulp.task('style-guide', function () {
+  return gulp.src('www/{,*/}*.js')
+    .pipe(jscs());
 });
 
 gulp.task('watch', function() {
