@@ -13,11 +13,16 @@ console.log(
 )
 
 gulp.watch(
-  './modules/ionic/dist/{,*/}*.{js,css,scss,json,eot,svg,ttf,woff}',
+  [
+    './modules/ionic/dist/{,*/}*.{js,css,scss,json,eot,svg,ttf,woff}',
+    './modules/ionic/scss/{,*/}*.scss'
+  ],
   batch(function (event, cb) {
     process.stdout.write('source changed')
+    gulp.src('./modules/ionic/scss/**')
+      .pipe(gulp.dest('www/lib/ionic/scss'));
     return gulp.src('./modules/ionic/dist/**')
-      .pipe(gulp.dest('www/lib/ionic/build'))
+      .pipe(gulp.dest('www/lib/ionic'));
   })
 );
 
