@@ -20,11 +20,13 @@
     "colors": "^1.1.x",
     "glob":"^5.0.x",
     "gulp-jscs": "^1.6.x",
-    "require-dir": "^0.3.0"
+    "require-dir": "^0.3.0",
+    "gulp-git": "^1.2.x",
+    "app-root-path":"^1.0.x"
   },
   "scripts": {
     "install-submodules": "./scripts/install/install-submodules.js",
-    "postinstall": "gulp bower-install"
+    "postinstall": "gulp bower-install install-source-modules"
   },
   "cordovaPlugins": [
     "cordova-plugin-device",

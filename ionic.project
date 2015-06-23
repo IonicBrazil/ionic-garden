@@ -8,5 +8,9 @@
   "watchPatterns": [
     "www/**/*",
     "!www/lib/**/*"
-  ]
+  ],
+  "sourceModules": {
+    "ionic": "git@github.com:driftyco/ionic.git",
+    "ng-cordova": "git@github.com:driftyco/ng-cordova.git"
+  }
 }
