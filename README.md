@@ -55,3 +55,16 @@ To load this source in your browser, remember to use `?ionic=build` in the URL
 
 ## Follow the Style Guide
 We recomend you to use this [Angular Code Style](https://github.com/johnpapa/angular-styleguide), it was created by a bunch of experienced angular developers, well, we recomend it. Feel free to adapt this Style Guide to attend your necessities
+
+## Source Modules
+Source modules is used to clone modules source code from GitHub, these sources are listed in `ionic.project` like this:
+```js
+"sourceModules": {
+  "ionic": "git@github.com:driftyco/ionic.git",
+  "ng-cordova": "git@github.com:driftyco/ng-cordova.git"
+}
+```
+
+[Checkout our default](https://github.com/felquis/ionic-garden/blob/master/ionic.project) `ionic.project` file
+
+`sourceModules` right now, only works with ionic source, but ng-cordova [will be added](https://github.com/felquis/ionic-garden/issues/18) soon
