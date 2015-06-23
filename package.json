@@ -18,7 +18,8 @@
     "yargs": "^3.12.x",
     "shelljs": "^0.5.x",
     "colors": "^1.1.x",
-    "glob":"^5.0.x"
+    "glob":"^5.0.x",
+    "gulp-jscs": "^1.6.x"
   },
   "scripts": {
     "install-submodules": "./scripts/install/install-submodules.js",

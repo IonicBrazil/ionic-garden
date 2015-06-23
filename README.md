@@ -52,3 +52,6 @@ It doesn't work with `ionic serve --lab` yet
 Open `js` and `scss` folder of `./modules/ionic/` and change Ionic source, `ionic serve` will run `gulp bundle` inside ionic source, and it will reload in your browser.
 
 To load this source in your browser, remember to use `?ionic=build` in the URL
+
+## Follow the Style Guide
+We recomend you to use this [Angular Code Style](https://github.com/johnpapa/angular-styleguide), it was created by a bunch of experienced angular developers, well, we recomend it. Feel free to adapt this Style Guide to attend your necessities
