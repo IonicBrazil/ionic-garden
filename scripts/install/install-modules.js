@@ -16,6 +16,8 @@ var installModules = function (paths, whatTheyAre) {
 var installModule = function (modulePath) {
 
   var cwd = path.dirname(modulePath)
+  //Hackish solution for windows users - npm isn't recognized as a executable, but npm.cmd is!
+  var npm = (process.platform === "win32" ? "npm.cmd" : "npm")
 
   // What is going on log
   console.log(
@@ -24,7 +26,7 @@ var installModule = function (modulePath) {
     ted.say.happy(cwd)
   )
 
-  var installing = exec('npm', ['install', '-d', '-s'], {
+  var installing = exec(npm, ['install', '-d', '-s'], {
     cwd: cwd
   }, function (err, out, erout) {
     // Good output
