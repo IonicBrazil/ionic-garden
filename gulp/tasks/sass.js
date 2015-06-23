@@ -5,15 +5,15 @@ var rename = require('gulp-rename');
 var config = require('../config').common;
 
 gulp.task('sass', function(done) {
-  gulp.src('./scss/ionic.app.scss')
+  gulp.src(config.allSCSSFiles)
     .pipe(sass({
       errLogToConsole: true
     }))
-    .pipe(gulp.dest('./www/css/'))
+    .pipe(gulp.dest(config.destCSS))
     .pipe(minifyCss({
       keepSpecialComments: 0
     }))
     .pipe(rename({ extname: '.min.css' }))
-    .pipe(gulp.dest('./www/css/'))
+    .pipe(gulp.dest(config.destCSS))
     .on('end', done);
 });
