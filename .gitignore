@@ -7,3 +7,5 @@ plugins/
 www/css/
 www/lib/
 npm-debug.log
+modules/*
+!modules/.keep
