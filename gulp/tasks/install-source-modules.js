@@ -13,15 +13,12 @@ gulp.task('install-source-modules', function() {
     console.log(
       'git clone',
       ionicProject.sourceModules[propertyName],
-      path.join(appRoot.path, './modules', propertyName)
+      path.join('modules', propertyName)
     )
 
-    console.log(path.join('../../modules/', propertyName, '/'))
-
     git.clone(ionicProject.sourceModules[propertyName], {
-      cwd: path.join('../../modules/', propertyName, '/')
+      cwd: path.join(appRoot.path, 'modules')
     }, function (err) {
-      console.log(err)
       if (err) throw err;
 
       console.log('Cloned ', propertyName)
