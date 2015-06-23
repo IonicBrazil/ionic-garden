@@ -1,6 +1,6 @@
-(function () {
+(function() {
 
-  var options = (function () {
+  var options = (function() {
     // Holy shit
     var optionsArray
     var result = {}
@@ -11,7 +11,7 @@
       return {}
     }
 
-    optionsArray.forEach(function (value, index) {
+    optionsArray.forEach(function(value, index) {
       // 0 is a property name and 1 the value of 0
       if (index % 2 === 1) {
         return
@@ -36,5 +36,5 @@
 
   console.log('Ionic From')
   console.log(toLoadSrc)
-  document.write('<script src="'+ toLoadSrc +'"></script>')
+  document.write('<script src="' + toLoadSrc + '"></script>')
 }())
