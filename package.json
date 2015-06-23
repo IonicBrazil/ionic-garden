@@ -19,11 +19,12 @@
     "shelljs": "^0.5.x",
     "colors": "^1.1.x",
     "glob":"^5.0.x",
-    "gulp-jscs": "^1.6.x"
+    "gulp-jscs": "^1.6.x",
+    "require-dir": "^0.3.0"
   },
   "scripts": {
     "install-submodules": "./scripts/install/install-submodules.js",
-    "postinstall": "gulp install"
+    "postinstall": "gulp bower-install"
   },
   "cordovaPlugins": [
     "cordova-plugin-device",
