@@ -20,9 +20,10 @@ gulp.watch(
   batch(function (event, cb) {
     process.stdout.write('source changed')
     gulp.src('./modules/ionic/scss/**')
-      .pipe(gulp.dest('www/lib/ionic/scss'));
-    return gulp.src('./modules/ionic/dist/**')
-      .pipe(gulp.dest('www/lib/ionic'));
+      .pipe(gulp.dest('www/lib/ionic/scss'))
+
+    gulp.src('./modules/ionic/dist/**')
+      .pipe(gulp.dest('www/lib/ionic'))
   })
 );
 
