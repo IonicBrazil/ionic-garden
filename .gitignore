@@ -9,3 +9,4 @@ www/lib/
 npm-debug.log
 modules/*
 !modules/.keep
+.idea
