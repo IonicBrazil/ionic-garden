@@ -1,5 +1,8 @@
-angular.module('starter.state.index', [])
+(function() {
+  'use strict';
+  angular.module('starter.state.index', [])
 
-.config(function($urlRouterProvider) {
-  $urlRouterProvider.otherwise('/app/playlists');
-});
+    .config(function ($urlRouterProvider) {
+      $urlRouterProvider.otherwise('/app/playlists');
+    });
+})();

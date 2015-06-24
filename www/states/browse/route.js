@@ -1,14 +1,18 @@
-angular.module('starter.state.browse', [])
+(function() {
+  'use strict';
 
-.config(function($stateProvider) {
-  $stateProvider
+  angular.module('starter.state.browse', [])
 
-  .state('app.browse', {
-    url: '/browse',
-    views: {
-      'menuContent': {
-        templateUrl: 'states/browse/template.html'
+  .config(function($stateProvider) {
+    $stateProvider
+
+    .state('app.browse', {
+      url: '/browse',
+      views: {
+        'menuContent': {
+          templateUrl: 'states/browse/template.html'
+        }
       }
-    }
+    });
   });
-});
+})();
