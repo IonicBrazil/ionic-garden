@@ -7,19 +7,13 @@ This project is for every ionite who wants to play with Ionic's Source
 To run this project, first lets clone it, with the special `--recursive` flag to bring us submodules sources
 
 ```sh
-git clone --recursive git@github.com:felquis/ionic-garden
+git clone git@github.com:felquis/ionic-garden
 ```
 
 Install dependencies
 
 ```sh
 npm install -d
-```
-
-Now lets install our npm minions, to do the dirty work for us
-
-```sh
-npm run install-submodules
 ```
 
 Run the project on your browser
