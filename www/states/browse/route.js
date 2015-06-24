@@ -10,5 +10,5 @@ angular.module('starter.state.browse', [])
         templateUrl: 'states/browse/template.html'
       }
     }
-  })
-})
+  });
+});

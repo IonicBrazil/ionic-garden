@@ -8,4 +8,4 @@ angular.module('starter.configureStatusBar', [
       StatusBar.styleDefault();
     }
   });
-})
+});

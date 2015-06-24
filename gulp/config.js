@@ -6,8 +6,8 @@ tasks.common = {}
 
 // All files path
 tasks.common.allHTMLFiles = src + '/*.html'
-tasks.common.allJSFiles = src + '/{,*/}*.js'
-tasks.common.scriptBase = src + 'js/{,*/}*.js'
+tasks.common.allJSFiles = ['www/{,*/}*.js', 'www/states/{,*/}*.js']
+tasks.common.scriptBase = src + '/{,*/}{,*/}*.js'
 tasks.common.allSCSSFiles = src + '/scss/{,*/}*.scss'
 tasks.common.src = src + '/'
 

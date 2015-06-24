@@ -11,5 +11,5 @@ angular.module('starter.state.playlists', ['starter.state.playlists.controller']
         controller: 'PlaylistsCtrl'
       }
     }
-  })
-})
+  });
+});

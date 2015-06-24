@@ -6,5 +6,5 @@ angular.module('starter.state.sidemenu', ['starter.state.sidemenu.controller'])
     abstract: true,
     templateUrl: 'states/sidemenu/template.html',
     controller: 'SidemenuCtrl'
-  })
+  });
 });

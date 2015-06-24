@@ -9,4 +9,4 @@ angular.module('starter.state.playlists.controller', [])
     { title: 'Rap', id: 5 },
     { title: 'Cowbell', id: 6 }
   ];
-})
+});

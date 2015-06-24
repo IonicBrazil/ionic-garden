@@ -39,4 +39,4 @@ angular.module('starter.state.sidemenu.controller', [])
       $scope.closeLogin();
     }, 1000);
   };
-})
+});

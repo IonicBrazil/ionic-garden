@@ -10,5 +10,5 @@ angular.module('starter.state.search', [])
         templateUrl: 'states/search/template.html'
       }
     }
-  })
-})
+  });
+});

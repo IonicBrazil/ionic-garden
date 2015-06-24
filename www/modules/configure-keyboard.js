@@ -8,4 +8,4 @@ angular.module('starter.configureKeyBoard', [
       cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
     }
   });
-})
+});
