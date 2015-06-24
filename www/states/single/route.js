@@ -5,7 +5,7 @@ angular.module('starter.state.single', ['starter.state.single.controller'])
     url: '/single/:singleId',
     views: {
       'menuContent': {
-        templateUrl: 'js/states/single/template.html',
+        templateUrl: 'states/single/template.html',
         controller: 'SingleCtrl'
       }
     }

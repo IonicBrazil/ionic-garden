@@ -7,7 +7,7 @@ angular.module('starter.state.search', [])
     url: '/search',
     views: {
       'menuContent': {
-        templateUrl: 'js/states/search/template.html'
+        templateUrl: 'states/search/template.html'
       }
     }
   })

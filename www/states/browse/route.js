@@ -7,7 +7,7 @@ angular.module('starter.state.browse', [])
     url: '/browse',
     views: {
       'menuContent': {
-        templateUrl: 'js/states/browse/template.html'
+        templateUrl: 'states/browse/template.html'
       }
     }
   })

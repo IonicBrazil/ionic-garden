@@ -7,7 +7,7 @@ angular.module('starter.state.playlists', ['starter.state.playlists.controller']
     url: '/playlists',
     views: {
       'menuContent': {
-        templateUrl: 'js/states/playlists/template.html',
+        templateUrl: 'states/playlists/template.html',
         controller: 'PlaylistsCtrl'
       }
     }

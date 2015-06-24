@@ -13,7 +13,7 @@ angular.module('starter.state.sidemenu.controller', [])
   $scope.loginData = {};
 
   // Create the login modal that we will use later
-  $ionicModal.fromTemplateUrl('js/modals/login.html', {
+  $ionicModal.fromTemplateUrl('modals/login.html', {
     scope: $scope
   }).then(function(modal) {
     $scope.modal = modal;
