@@ -17,7 +17,7 @@ var installModule = function (modulePath) {
 
   var cwd = path.dirname(modulePath)
   //Hackish solution for windows users - npm isn't recognized as a executable, but npm.cmd is!
-  var npm = (process.platform === "win32" ? "npm.cmd" : "npm")
+  var npm = (process.platform === 'win32' ? 'npm.cmd' : 'npm')
 
   // What is going on log
   console.log(
