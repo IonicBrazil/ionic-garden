@@ -11,6 +11,6 @@
   ],
   "sourceModules": {
     "ionic": "git@github.com:driftyco/ionic.git",
-    "ng-cordova": "git@github.com:driftyco/ng-cordova.git"
+    "ng-cordova": "https://github.com/driftyco/ng-cordova.git"
   }
 }
