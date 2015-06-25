@@ -3,16 +3,17 @@
 
   angular.module('starter.state.browse', [])
 
-  .config(function($stateProvider) {
-    $stateProvider
+  .config(configBrowse);
 
-    .state('app.browse', {
-      url: '/browse',
-      views: {
-        'menuContent': {
-          templateUrl: 'states/browse/template.html'
+  function configBrowse($stateProvider) {
+    $stateProvider
+      .state('app.browse', {
+        url: '/browse',
+        views: {
+          'menuContent': {
+            templateUrl: 'states/browse/template.html'
+          }
         }
-      }
-    });
-  });
+      });
+  }
 })();
