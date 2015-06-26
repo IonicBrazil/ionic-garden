@@ -5,7 +5,7 @@ node_modules/
 platforms/
 plugins/
 www/css/
-www/lib/
+src/lib/
 npm-debug.log
 modules/*
 !modules/.keep

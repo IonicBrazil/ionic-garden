@@ -15,7 +15,7 @@ console.log(
 gulp.watch(
   './modules/ionic/dist/{,*/}*.{js,css,scss,json,eot,svg,ttf,woff}',
   batch(function (event, cb) {
-    process.stdout.write('source changed')
+    process.stdout.write('ionic source changed')
     return gulp.src('./modules/ionic/dist/**')
       .pipe(gulp.dest('www/lib/ionic/build'))
   })

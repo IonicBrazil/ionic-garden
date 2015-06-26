@@ -1,3 +1,3 @@
 var gulp = require('gulp');
 
-gulp.task('default', ['style-guide', 'sass']);
+gulp.task('default', ['style-guide', 'sass', 'source']);
