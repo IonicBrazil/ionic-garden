@@ -1,11 +1,17 @@
-angular.module('starter.configureStatusBar', [
-  'ionic'
-])
+(function() {
+  'use strict';
 
-.run(function($ionicPlatform) {
-  $ionicPlatform.ready(function() {
-    if (window.StatusBar) {
-      StatusBar.styleDefault();
-    }
-  });
-});
+  angular.module('starter.configureStatusBar', [
+    'ionic'
+  ])
+
+  .run(configStatusBar);
+
+  function configStatusBar($ionicPlatform) {
+    $ionicPlatform.ready(function() {
+      if (window.StatusBar) {
+        StatusBar.styleDefault();
+      }
+    });
+  }
+})();
