@@ -4,7 +4,7 @@ This project is for every ionite who wants to play with Ionic's Source
 
 ## Run Ionites, Run!
 
-To run this project, first lets clone it, with the special `--recursive` flag to bring us submodules sources
+To run this project, first lets clone it
 
 ```sh
 git clone git@github.com:felquis/ionic-garden
