@@ -10,6 +10,7 @@ tasks.common.allHTMLFiles = src + '/*.html'
 tasks.common.allJSFiles = ['src/{,*/}*.js', 'src/states/{,*/}*.js']
 tasks.common.scriptBase = src + '/{,*/}{,*/}*.js'
 tasks.common.allSCSSFiles = src + '/scss/{,*/}*.scss'
+tasks.common.allStaticFiles = [src + '/**', '!'+src+'/scss{,/**}']
 tasks.common.src = src + '/'
 tasks.common.allFiles = src + '/**'
 
