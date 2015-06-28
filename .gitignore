@@ -4,9 +4,10 @@
 node_modules/
 platforms/
 plugins/
-www/css/
 src/lib/
 npm-debug.log
 modules/*
 !modules/.keep
 .idea
+www/*
+!www/.keep
