@@ -46,5 +46,7 @@
     "beforeOpeningCurlyBrace": true
   },
   "validateLineBreaks": "LF",
-  "requireSemicolons": true
+  "requireSemicolons": true,
+  "requireParenthesesAroundIIFE": true,
+  "validateIndentation": 2
 }
