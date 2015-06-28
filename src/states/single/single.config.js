@@ -9,7 +9,7 @@
       url: '/single/:singleId',
       views: {
         'menuContent': {
-          templateUrl: 'states/single/template.html',
+          templateUrl: 'states/single/single.html',
           controller: 'SingleController'
         }
       }

@@ -4,9 +4,11 @@ var exec = require('child_process').execFile
 var config = require('../config').common;
 
 gulp.task('watch', function() {
-  gulp.watch(config.allSCSSFiles, ['sass', 'source']);
+  gulp.watch(config.allSCSSFiles, ['sass']);
 
   var child = exec('./scripts/watch/watch.js')
 
   child.stdout.on('data', console.log)
+
+  gulp.watch(config.allFiles, ['source']);
 });

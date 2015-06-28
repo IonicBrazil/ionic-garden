@@ -10,7 +10,7 @@
         url: '/search',
         views: {
           'menuContent': {
-            templateUrl: 'states/search/template.html'
+            templateUrl: 'states/search/search.html'
           }
         }
       });

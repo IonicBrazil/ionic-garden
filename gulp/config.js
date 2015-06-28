@@ -15,6 +15,6 @@ tasks.common.allFiles = src + '/**'
 
 // Dest paths
 tasks.common.destBase = dest
-tasks.common.destCSS = tasks.common.destBase + '/css/'
+tasks.common.destCSS = tasks.common.src + '/css/'
 
 module.exports = tasks;

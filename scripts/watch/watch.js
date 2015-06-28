@@ -17,7 +17,7 @@ gulp.watch(
   batch(function (event, cb) {
     process.stdout.write('ionic source changed')
     return gulp.src('./modules/ionic/dist/**')
-      .pipe(gulp.dest('www/lib/ionic/build'))
+      .pipe(gulp.dest('src/lib/ionic/build'))
   })
 );
 
