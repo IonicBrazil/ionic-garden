@@ -11,7 +11,7 @@
         url: '/browse',
         views: {
           'menuContent': {
-            templateUrl: 'states/browse/browse.html'
+            templateUrl: 'states/browse/template.html'
           }
         }
       });

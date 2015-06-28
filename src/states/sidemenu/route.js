@@ -8,7 +8,7 @@
     $stateProvider.state('app', {
       url: '/app',
       abstract: true,
-      templateUrl: 'states/sidemenu/sidemenu.html',
+      templateUrl: 'states/sidemenu/template.html',
       controller: 'SidemenuController'
     });
   }
