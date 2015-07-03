@@ -29,7 +29,7 @@
     "jscs-jsdoc": "^1.1.x"
   },
   "scripts": {
-    "install-submodules": "./scripts/install/install-submodules.js"
+    "install-submodules": "node ./scripts/install/install-submodules.js"
   },
   "cordovaPlugins": [
     "cordova-plugin-device",
