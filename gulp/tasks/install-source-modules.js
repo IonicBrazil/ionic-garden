@@ -14,14 +14,25 @@ gulp.task('install-source-modules', function() {
       'git clone',
       ionicProject.sourceModules[propertyName],
       path.join('modules', propertyName)
-    )
+    );
+    
+    var cwd = path.join(appRoot.path, 'modules');
+    var modulePath = path.join(cwd, propertyName);
+    var directory = fs.lstatSync(modulePath);
+    if (directory.isDirectory()) {
+      git.pull('origin', 'master', {cwd: modulePath, args: '--rebase'}, function (err) {
+        if (err) throw err;
 
-    git.clone(ionicProject.sourceModules[propertyName], {
-      cwd: path.join(appRoot.path, 'modules')
-    }, function (err) {
-      if (err) throw err;
+        console.log('Updated ', propertyName);
+      });
+    } else {
+      git.clone(ionicProject.sourceModules[propertyName], {
+        cwd: cwd
+      }, function (err) {
+        if (err) throw err;
 
-      console.log('Cloned ', propertyName)
-    })
+        console.log('Cloned ', propertyName);
+      });
+    }
   })
 });
