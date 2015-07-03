@@ -26,7 +26,7 @@
 //      console.log(scope.ig)
 
       element.on('click', function () {
-        console.log('igLoading $destroy', scope.ig.time, scope.ig.count++);
+        console.log('igLoading click ', scope.ig.time, scope.ig.count++);
       })
     }
   }

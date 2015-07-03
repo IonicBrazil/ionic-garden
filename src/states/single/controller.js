@@ -4,7 +4,11 @@
 
     .controller('SingleController', SingleController);
 
-  function SingleController($scope, $state) {
-    $scope.id = $state.params.singleId;
+  SingleController.$inject = ['$state'];
+
+  function SingleController($state) {
+    var vm = this;
+
+    vm.id = $state.params.singleId;
   }
 })();

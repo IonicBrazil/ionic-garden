@@ -30,8 +30,8 @@
     <script>
       $script([
         'app.js',
-        'modules/configure-keyboard.js',
-        'modules/configure-status-bar.js',
+        'shared/configure-keyboard.js',
+        'shared/configure-status-bar.js',
         'states/sidemenu/route.js',
         'states/sidemenu/controller.js',
         'states/search/route.js',
@@ -52,7 +52,6 @@
         'states/come-back/controller.js',
         'shared/ig-button-loading/ig-button-loading.directive.js',
         'shared/ig-button-loading/ig-button-loading.controller.js',
-        'shared/ig-button-loading/ig-button-loading.spec.js',
         'states/index/route.js'
       ], function() {
         angular.bootstrap(document.body, ['starter']);

@@ -9,7 +9,7 @@
       url: '/app',
       abstract: true,
       templateUrl: 'states/sidemenu/template.html',
-      controller: 'SidemenuController'
+      controller: 'SidemenuController as vm'
     });
   }
 })();

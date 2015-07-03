@@ -4,17 +4,18 @@
     .module('starter.state.come-back.controller', [])
     .controller('ComeBackController', ComeBackController);
 
-  ComeBackController.$inject = ['$scope', '$timeout', '$ionicHistory'];
+  ComeBackController.$inject = ['$timeout', '$ionicHistory'];
 
-  function ComeBackController($scope, $timeout, $ionicHistory) {
-    $scope.title = 'Wait a second';
+  function ComeBackController($timeout, $ionicHistory) {
+    var vm = this;
+    vm.title = 'Wait a second';
 
-    $scope.$on('$ionicView.enter', returnAfter2Seconds);
+    vm.$on('$ionicView.enter', returnAfter2Seconds);
 
     function returnAfter2Seconds() {
       $timeout(function () {
         $ionicHistory.goBack();
-      });
+      }, 2000);
     }
   }
 })();
