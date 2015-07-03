@@ -8,6 +8,9 @@
 
   var total = 10;
 
+  /**
+   * Define Infinite Scroll Controller
+   */
   function InfiniteScrollController($scope, $state, $timeout) {
     var vm = this;
 
@@ -15,19 +18,25 @@
     vm.list = getList();
     vm.loadMore = loadMore;
 
+    /**
+     * Return a list of itens
+     */
     function getList(limit) {
       var dados = [];
       for (var i = limit; i >= 0; i--) {
         dados[i] = i;
-      };
+      }
 
       return dados;
     }
 
+    /**
+     * Load more items in the current state
+     */
     function loadMore() {
       total = total + 20;
 
-      $timeout(function () {
+      $timeout(function() {
         $scope.vm.list = getList(total);
         $scope.$broadcast('scroll.infiniteScrollComplete');
       }, 2000);

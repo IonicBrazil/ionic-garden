@@ -4,6 +4,9 @@
 
     .controller('PlaylistsController', PlaylistsController);
 
+  /**
+   * Define Playlists Controller
+   */
   function PlaylistsController() {
     var vm = this;
 

@@ -5,6 +5,9 @@
     'starter.shared.ig-button-loading'
   ]).config(configRefresher);
 
+  /**
+   * Define Loading Route
+   */
   function configRefresher($stateProvider) {
     $stateProvider.state('app.loading', {
       url: '/loading',

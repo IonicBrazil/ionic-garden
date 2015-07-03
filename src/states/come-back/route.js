@@ -2,9 +2,12 @@
   'use strict';
   angular.module('starter.state.come-back', ['starter.state.come-back.controller'])
 
-  .config(configRefresher);
+  .config(configComeBack);
 
-  function configRefresher($stateProvider) {
+  /**
+   * Define Come Back Route
+   */
+  function configComeBack($stateProvider) {
     $stateProvider.state('app.comeBack', {
       url: '/come-back',
       views: {

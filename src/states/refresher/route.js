@@ -4,6 +4,9 @@
 
   .config(configRefresher);
 
+  /**
+   * Define Refresher Route
+   */
   function configRefresher($stateProvider) {
     $stateProvider.state('app.refresher', {
       url: '/refresher',

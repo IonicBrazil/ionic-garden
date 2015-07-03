@@ -2,8 +2,11 @@
   'use strict';
   angular.module('starter.state.playlists', ['starter.state.playlists.controller'])
 
-    .config(configPlaylists);
+  .config(configPlaylists);
 
+  /**
+   * Define Playlists Route
+   */
   function configPlaylists($stateProvider, $urlRouterProvider) {
     $stateProvider
       .state('app.playlists', {

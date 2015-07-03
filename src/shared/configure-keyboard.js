@@ -7,6 +7,9 @@
 
   .run(configKeyBoard);
 
+  /**
+   * Configure Keyboard
+   */
   function configKeyBoard($ionicPlatform) {
     $ionicPlatform.ready(function() {
       if (window.cordova && window.cordova.plugins.Keyboard) {

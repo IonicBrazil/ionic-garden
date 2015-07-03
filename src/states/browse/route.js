@@ -5,6 +5,9 @@
 
   .config(configBrowse);
 
+  /**
+   * Define Browse Route
+   */
   function configBrowse($stateProvider) {
     $stateProvider
       .state('app.browse', {

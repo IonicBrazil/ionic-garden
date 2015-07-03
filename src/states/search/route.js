@@ -4,6 +4,9 @@
 
     .config(configSearch);
 
+  /**
+   * Define Search Route
+   */
   function configSearch($stateProvider) {
     $stateProvider
       .state('app.search', {

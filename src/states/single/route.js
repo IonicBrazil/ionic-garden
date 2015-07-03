@@ -4,6 +4,9 @@
 
     .config(configSingle);
 
+  /**
+   * Define Single Route
+   */
   function configSingle($stateProvider) {
     $stateProvider.state('app.single', {
       url: '/single/:singleId',

@@ -4,6 +4,9 @@
 
   .config(configRefresher);
 
+  /**
+   * Define Spinner Route
+   */
   function configRefresher($stateProvider) {
     $stateProvider.state('app.spinners', {
       url: '/spinners',

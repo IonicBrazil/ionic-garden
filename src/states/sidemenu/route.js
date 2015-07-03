@@ -4,6 +4,9 @@
 
     .config(configSidemenu);
 
+  /**
+   * Define Side Menu Route
+   */
   function configSidemenu($stateProvider) {
     $stateProvider.state('app', {
       url: '/app',

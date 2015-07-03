@@ -48,5 +48,20 @@
   "validateLineBreaks": "LF",
   "requireSemicolons": true,
   "requireParenthesesAroundIIFE": true,
-  "validateIndentation": 2
+  "validateIndentation": 2,
+  "plugins": [
+    "jscs-jsdoc"
+  ],
+  "jsDoc": {
+    "checkParamNames": true,
+    "requireParamTypes": true,
+    "checkRedundantParams": true,
+    "checkRedundantReturns": true,
+    "requireReturnTypes": true,
+    "requireParamDescription": true,
+    "requireHyphenBeforeDescription": true,
+    "disallowNewlineAfterDescription": true,
+    "requireDescriptionCompleteSentence": true,
+    "enforceExistence": "exceptExports"
+  }
 }

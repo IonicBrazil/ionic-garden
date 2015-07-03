@@ -6,6 +6,9 @@
 
   SingleController.$inject = ['$state'];
 
+  /**
+   * Define Single Controller
+   */
   function SingleController($state) {
     var vm = this;
 

@@ -2,11 +2,14 @@
   'use strict';
   angular.module('starter.state.infinite-scroll', ['starter.state.infinite-scroll.controller'])
 
-  .config(configinfiniteScroll);
+  .config(configInfiniteScroll);
 
-  // configinfiniteScroll.$inject(['$stateProvider']);
+  configInfiniteScroll.$inject(['$stateProvider']);
 
-  function configinfiniteScroll($stateProvider) {
+  /**
+   * Define Infinite Scroll Route
+   */
+  function configInfiniteScroll($stateProvider) {
     $stateProvider.state('app.infinite-scroll', {
       url: '/infinite-scroll',
       views: {

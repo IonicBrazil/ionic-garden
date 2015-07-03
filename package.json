@@ -25,7 +25,8 @@
     "jshint-stylish": "^1.0.0",
     "gulp-jshint": "^1.7.1",
     "gulp-autoprefixer": "^1.0.1",
-    "gulp-plumber": "^0.6.6"
+    "gulp-plumber": "^0.6.6",
+    "jscs-jsdoc": "^1.1.x"
   },
   "scripts": {
     "install-submodules": "./scripts/install/install-submodules.js"
