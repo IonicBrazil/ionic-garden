@@ -10,7 +10,7 @@
       views: {
         'menuContent': {
           templateUrl: 'states/single/template.html',
-          controller: 'SingleController'
+          controller: 'SingleController as vm'
         }
       }
     });

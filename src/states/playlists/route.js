@@ -11,7 +11,7 @@
         views: {
           'menuContent': {
             templateUrl: 'states/playlists/template.html',
-            controller: 'PlaylistsController'
+            controller: 'PlaylistsController as vm'
           }
         }
       });
