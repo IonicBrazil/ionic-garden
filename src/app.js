@@ -9,6 +9,10 @@
     'starter.state.browse',
     'starter.state.playlists',
     'starter.state.single',
-    'starter.state.index'
+    'starter.state.index',
+    'starter.state.infinite-scroll',
+    'starter.state.refresher',
+    'starter.state.spinners',
+    'starter.state.loading'
   ]);
 })();

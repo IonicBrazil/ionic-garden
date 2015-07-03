@@ -1,0 +1,16 @@
+<ion-view view-title="{{ vm.title }}">
+  <ion-content>
+    <ion-refresher
+      pulling-text="Pull to refresh..."
+      on-refresh="vm.loadMore()">
+    </ion-refresher>
+
+    <h1>{{ vm.title }}</h1>
+
+    <ul>
+      <li ng-repeat="item in vm.list track by $index">
+        {{ $index }}
+      </li>
+    </ul>
+  </ion-content>
+</ion-view>
