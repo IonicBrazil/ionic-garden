@@ -1,0 +1,17 @@
+<ion-view view-title="{{ vm.title }}">
+  <ion-content>
+    <h1>{{ vm.title }}</h1>
+
+    <ul>
+      <li ng-repeat="item in vm.list track by $index">
+        {{ $index }}
+      </li>
+    </ul>
+
+    <ion-infinite-scroll
+      on-infinite="vm.loadMore()"
+      distance="1%"
+      immediate-check="true">
+    </ion-infinite-scroll>
+  </ion-content>
+</ion-view>

@@ -21,11 +21,14 @@
     "gulp-util": "^3.0.x",
     "require-dir": "^0.3.0",
     "shelljs": "^0.5.x",
-    "yargs": "^3.12.x"
+    "yargs": "^3.12.x",
+    "jshint-stylish": "^1.0.0",
+    "gulp-jshint": "^1.7.1",
+    "gulp-autoprefixer": "^1.0.1",
+    "gulp-plumber": "^0.6.6"
   },
   "scripts": {
-    "install-submodules": "./scripts/install/install-submodules.js",
-    "postinstall": "gulp bower-install install-source-modules"
+    "install-submodules": "./scripts/install/install-submodules.js"
   },
   "cordovaPlugins": [
     "cordova-plugin-device",

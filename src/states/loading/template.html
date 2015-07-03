@@ -1,0 +1,19 @@
+<ion-view view-title="{{ title }}">
+  <ion-content>
+    <ion-refresher
+      pulling-text="Pull to refresh..."
+      on-refresh="loadMore()">
+    </ion-refresher>
+
+    <h1>{{ title }}</h1>
+
+    <ig-loading class="button button-positive button-full">
+      Show Basic Loading
+    </ig-loading>
+
+
+    <ig-loading no-backdrop="true" class="button button-positive button-full">
+      Show with no backdrop
+    </ig-loading>
+  </ion-content>
+</ion-view>

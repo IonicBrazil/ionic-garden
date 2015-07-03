@@ -2,7 +2,8 @@
   "name": "ionic-garden",
   "app_id": "",
   "gulpStartupTasks": [
-    "sass",
+    "styles",
+    "source",
     "watch"
   ],
   "watchPatterns": [
