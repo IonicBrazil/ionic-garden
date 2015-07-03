@@ -13,6 +13,7 @@
     'starter.state.infinite-scroll',
     'starter.state.refresher',
     'starter.state.spinners',
+    'starter.state.come-back',
     'starter.state.loading'
   ]);
 })();

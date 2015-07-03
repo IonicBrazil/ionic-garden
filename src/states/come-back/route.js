@@ -10,7 +10,7 @@
       views: {
         'menuContent': {
           templateUrl: 'states/come-back/template.html',
-          controller: 'LoadingController'
+          controller: 'ComeBackController as vm'
         }
       }
     });
