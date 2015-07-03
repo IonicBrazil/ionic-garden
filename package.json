@@ -30,7 +30,7 @@
   },
   "scripts": {
     "postinstall": "bower install && gulp install-source-modules",
-    "install-submodules": "./scripts/install/install-submodules.js"
+    "install-submodules": "node ./scripts/install/install-submodules.js"
   },
   "cordovaPlugins": [
     "cordova-plugin-device",

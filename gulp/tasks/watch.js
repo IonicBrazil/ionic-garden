@@ -7,7 +7,7 @@ gulp.task('watch', function() {
   gulp.watch(config.allSCSSFiles, ['styles']);
   gulp.watch(config.allStaticFiles, ['source']);
 
-  var child = exec('./scripts/watch/watch.js')
+  var child = exec('node ./scripts/watch/watch.js')
 
   child.stdout.on('data', console.log)
 });
