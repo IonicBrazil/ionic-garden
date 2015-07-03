@@ -2,7 +2,7 @@
 
 This project is for every ionite who wants to play with Ionic's Source
 
-If you want to colaborate with this proeject, check out our first milestone [1.0.0-beta.1](https://github.com/IonicBrazil/ionic-garden/milestones/1.0.0-beta.1)
+If you want to colaborate with this project, check out our first milestone [1.0.0-beta.1](https://github.com/IonicBrazil/ionic-garden/milestones/1.0.0-beta.1)
 
 ## Run Ionites, Run!
 
