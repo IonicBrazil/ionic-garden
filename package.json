@@ -29,6 +29,7 @@
     "jscs-jsdoc": "^1.1.x"
   },
   "scripts": {
+    "postinstall": "bower install && gulp install-source-modules",
     "install-submodules": "./scripts/install/install-submodules.js"
   },
   "cordovaPlugins": [
