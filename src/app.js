@@ -1,5 +1,6 @@
 angular.module('ionicGarden', [
   'ionic',
+  'ionicGardenTemplates',
   'ionicGarden.configureKeyBoard',
   'ionicGarden.configureStatusBar',
   'ionicGarden.state.sidemenu',

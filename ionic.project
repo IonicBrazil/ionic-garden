@@ -2,14 +2,9 @@
   "name": "ionic-garden",
   "app_id": "",
   "gulpStartupTasks": [
-    "styles",
-    "source",
-    "watch"
+    "serve"
   ],
-  "watchPatterns": [
-    "www/**/*",
-    "!www/lib/**/*"
-  ],
+  "watchPatterns": [],
   "sourceModules": {
     "ionic": "git://github.com/driftyco/ionic.git",
     "ng-cordova": "git://github.com/driftyco/ng-cordova.git"

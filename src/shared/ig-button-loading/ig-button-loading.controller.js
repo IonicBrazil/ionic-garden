@@ -17,12 +17,15 @@ var DEFAULT_LOADING_OPTIONS = {
 function IGButtonLoadingController($scope, $element, $state, $timeout, $ionicLoading) {
 
   var vm = this;
-  vm.link = link
-  vm.show = show
-  vm.hide = hide
+  vm.link = link;
+  vm.show = show;
+  vm.hide = hide;
 
   $scope.$on('$destroy', destroy);
 
+  /**
+   * Link Function
+   */
   function link() {
     $element.on('click', show);
   }

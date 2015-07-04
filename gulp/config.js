@@ -6,11 +6,12 @@ var tasks = {};
 tasks.common = {};
 
 // All files path
-tasks.common.allHTMLFiles = src + '/*.html';
-tasks.common.allJSFiles = ['src/{,*/,*/*/}*.js', '!src/lib{,/**}'];
+tasks.common.allHTMLFiles = 'src/index.html';
+tasks.common.allTemplates = ['src/{,*/,*/*/}*.html', '!src/index.html'];
+tasks.common.allJSFiles = [src + '/{,*/,*/*/}*.js', '!'+src+'/lib{,/**}'];
 tasks.common.scriptBase = src + '/{,*/}{,*/}*.js';
 tasks.common.allSCSSFiles = src + '/scss/{,*/}*.scss';
-tasks.common.allStaticFiles = [src + '/**', '!'+src+'/scss{,/**}', '!'+src+'/{,*/,*/*/}*.js'];
+tasks.common.allStaticFiles = ['src/img/**', 'src/lib/**'];
 tasks.common.src = src + '/';
 tasks.common.allFiles = src + '/**';
 

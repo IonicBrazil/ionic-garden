@@ -15,7 +15,7 @@ gulp.task('install-source-modules', function() {
       ionicProject.sourceModules[propertyName],
       path.join('modules', propertyName)
     );
-    
+
     var cwd = path.join(appRoot.path, 'modules');
     var modulePath = path.join(cwd, propertyName);
     var directory = fs.lstatSync(modulePath);

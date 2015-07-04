@@ -27,6 +27,9 @@ function Wait($timeout, $state) {
       $timeout(andGo, attr.wait);
     }
 
+    /**
+     * Navigate to element's andGo attribute
+     */
     function andGo() {
       $state.go(attr.andGo);
     }
