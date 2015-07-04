@@ -9,7 +9,7 @@ If you want to colaborate with this project, check out our first milestone [1.0.
 To run this project, first lets clone it
 
 ```sh
-git clone git@github.com:felquis/ionic-garden
+git clone git@github.com:ionicbrazil/ionic-garden
 ```
 
 Install dependencies
