@@ -1,27 +1,29 @@
-(function() {
-  'use strict';
-  angular
-    .module('starter.state.come-back.controller', [])
-    .controller('ComeBackController', ComeBackController);
+angular
+  .module('starter.state.come-back.controller', [])
+  .controller('ComeBackController', ComeBackController);
 
-  ComeBackController.$inject = ['$timeout', '$ionicHistory'];
+ComeBackController.$inject = ['$timeout', '$ionicHistory'];
+
+/**
+ * Define Come Back Controller
+ */
+function ComeBackController($timeout, $ionicHistory) {
+  var vm = this;
+  vm.title = 'Wait a second';
+
+  vm.$on('$ionicView.enter', returnAfter2Seconds);
 
   /**
-   * Define Come Back Controller
+   * Return to previous view after two seconds in the current view
    */
-  function ComeBackController($timeout, $ionicHistory) {
-    var vm = this;
-    vm.title = 'Wait a second';
-
-    vm.$on('$ionicView.enter', returnAfter2Seconds);
+  function returnAfter2Seconds() {
+    $timeout(next, 2000);
 
     /**
-     * Return to previous view after two seconds in the current view
+     * Navigate to previous view
      */
-    function returnAfter2Seconds() {
-      $timeout(function() {
-        $ionicHistory.goBack();
-      }, 2000);
+    function next() {
+      $ionicHistory.goBack();
     }
   }
-})();
+}

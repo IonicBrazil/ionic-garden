@@ -1,55 +1,72 @@
-(function() {
-  'use strict';
-  angular.module('starter.state.sidemenu.controller', [])
-
+angular
+  .module('starter.state.sidemenu.controller', [])
   .controller('SidemenuController', SidemenuController);
 
-  SidemenuController.$inject = ['$scope', '$ionicModal', '$timeout'];
+SidemenuController.$inject = ['$scope', '$ionicModal', '$timeout'];
+
+/**
+ * Define Sidemenu Controller
+ */
+function SidemenuController($scope, $ionicModal, $timeout) {
+  var vm = this;
+
+  // Form data for the login modal
+  vm.loginData = {};
+  vm.closeLogin = closeLogin;
+  vm.login = login;
+  vm.doLogin = doLogin;
 
   /**
-   * Define Sidemenu Controller
+   * Create the login modal that we will use later
    */
-  function SidemenuController($scope, $ionicModal, $timeout) {
-    var vm = this;
+  $ionicModal.fromTemplateUrl('modals/login.html', {
+    scope: $scope
+  }).then(resolveModal, rejectModal);
 
-    // Form data for the login modal
-    vm.loginData = {};
-
-    /**
-     * Create the login modal that we will use later
-     */
-    $ionicModal.fromTemplateUrl('modals/login.html', {
-      scope: $scope
-    }).then(function(modal) {
-      vm.modal = modal;
-      $scope.vm = vm;
-    });
-
-    /**
-     * Triggered in the login modal to close it
-     */
-    vm.closeLogin = function() {
-      vm.modal.hide();
-    };
-
-    /**
-     * Open the login modal
-     */
-    vm.login = function() {
-      vm.modal.show();
-    };
-
-    /**
-     * Perform the login action when the user submits the login form
-     */
-    vm.doLogin = function() {
-      console.log('Doing login', vm.loginData);
-
-      // Simulate a login delay. Remove this and replace with your login
-      // code if using a login system
-      $timeout(function() {
-        vm.closeLogin();
-      }, 1000);
-    };
+  /**
+   * Modal successful created
+   */
+  function resolveModal(modal) {
+    vm.modal = modal;
+    $scope.vm = vm;
   }
-})();
+
+  /**
+   * Log an error if the modal is rejected
+   */
+  function rejectModal(err) {
+    console.error('Modal reject: ', err);
+  }
+
+  /**
+   * Triggered in the login modal to close it
+   */
+  function closeLogin() {
+    vm.modal.hide();
+  }
+
+  /**
+   * Open the login modal
+   */
+  function login() {
+    vm.modal.show();
+  }
+
+  /**
+   * Perform the login action when the user submits the login form
+   */
+  function doLogin() {
+    console.log('Doing login', vm.loginData);
+
+    // Simulate a login delay. Remove this and replace with your login
+    // code if using a login system
+    $timeout(delayLoad, 1000);
+
+    /**
+     * Closes the modal
+     */
+    function delayLoad() {
+      vm.closeLogin();
+    }
+  }
+}

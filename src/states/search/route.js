@@ -1,21 +1,18 @@
-(function() {
-  'use strict';
-  angular.module('starter.state.search', [])
+angular
+  .module('starter.state.search', [])
+  .config(configSearch);
 
-    .config(configSearch);
-
-  /**
-   * Define Search Route
-   */
-  function configSearch($stateProvider) {
-    $stateProvider
-      .state('app.search', {
-        url: '/search',
-        views: {
-          'menuContent': {
-            templateUrl: 'states/search/template.html'
-          }
+/**
+ * Define Search Route
+ */
+function configSearch($stateProvider) {
+  $stateProvider
+    .state('app.search', {
+      url: '/search',
+      views: {
+        'menuContent': {
+          templateUrl: 'states/search/template.html'
         }
-      });
-  }
-})();
+      }
+    });
+}

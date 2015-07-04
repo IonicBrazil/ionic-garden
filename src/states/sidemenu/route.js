@@ -1,18 +1,15 @@
-(function() {
-  'use strict';
-  angular.module('starter.state.sidemenu', ['starter.state.sidemenu.controller'])
+angular
+  .module('starter.state.sidemenu', ['starter.state.sidemenu.controller'])
+  .config(configSidemenu);
 
-    .config(configSidemenu);
-
-  /**
-   * Define Side Menu Route
-   */
-  function configSidemenu($stateProvider) {
-    $stateProvider.state('app', {
-      url: '/app',
-      abstract: true,
-      templateUrl: 'states/sidemenu/template.html',
-      controller: 'SidemenuController as vm'
-    });
-  }
-})();
+/**
+ * Define Side Menu Route
+ */
+function configSidemenu($stateProvider) {
+  $stateProvider.state('app', {
+    url: '/app',
+    abstract: true,
+    templateUrl: 'states/sidemenu/template.html',
+    controller: 'SidemenuController as vm'
+  });
+}

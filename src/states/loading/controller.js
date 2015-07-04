@@ -1,15 +1,12 @@
-(function() {
-  'use strict';
-  angular
-    .module('starter.state.loading.controller', [])
-    .controller('LoadingController', LoadingController);
+angular
+  .module('starter.state.loading.controller', [])
+  .controller('LoadingController', LoadingController);
 
-  LoadingController.$inject = ['$scope', '$state', '$timeout', '$ionicLoading'];
+LoadingController.$inject = ['$scope', '$state', '$timeout', '$ionicLoading'];
 
-  /**
-   * Define Loading Controller
-   */
-  function LoadingController($scope, $state, $timeout, $ionicLoading) {
-    $scope.title = 'Loading';
-  }
-})();
+/**
+ * Define Loading Controller
+ */
+function LoadingController($scope, $state, $timeout, $ionicLoading) {
+  $scope.title = 'Loading';
+}

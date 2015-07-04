@@ -1,17 +1,14 @@
-(function() {
-  'use strict';
-  angular.module('starter.state.single.controller', [])
+angular
+  .module('starter.state.single.controller', [])
+  .controller('SingleController', SingleController);
 
-    .controller('SingleController', SingleController);
+SingleController.$inject = ['$state'];
 
-  SingleController.$inject = ['$state'];
+/**
+ * Define Single Controller
+ */
+function SingleController($state) {
+  var vm = this;
 
-  /**
-   * Define Single Controller
-   */
-  function SingleController($state) {
-    var vm = this;
-
-    vm.id = $state.params.singleId;
-  }
-})();
+  vm.id = $state.params.singleId;
+}
