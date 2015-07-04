@@ -16,7 +16,7 @@ function ComeBackController($scope, $timeout, $ionicHistory) {
    * Return to previous view after two seconds in the current view
    */
   function returnAfter2Seconds() {
-    $timeout(next, 2000);
+    $timeout(next, 1000);
 
     /**
      * Navigate to previous view

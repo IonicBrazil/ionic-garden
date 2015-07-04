@@ -2,7 +2,7 @@ angular
   .module('starter.shared.ig-button-loading.controller', [])
   .controller('IGButtonLoadingController', IGButtonLoadingController);
 
-IGButtonLoadingController.$inject = ['$scope', '$state', '$timeout', '$ionicLoading'];
+IGButtonLoadingController.$inject = ['$scope', '$element', '$state', '$timeout', '$ionicLoading'];
 
 var DEFAULT_LOADING_OPTIONS = {
   noBackdrop: false,
@@ -14,24 +14,37 @@ var DEFAULT_LOADING_OPTIONS = {
 /**
  * Controller Definition
  */
-function IGButtonLoadingController($scope, $state, $timeout, $ionicLoading) {
+function IGButtonLoadingController($scope, $element, $state, $timeout, $ionicLoading) {
 
-  $scope.ig = $scope.ig;
+  var vm = this;
+  vm.link = link
+  vm.show = show
+  vm.hide = hide
 
   $scope.$on('$destroy', destroy);
+
+  function link() {
+    $element.on('click', show);
+  }
 
   /**
    * Scope Destroy
    */
   function destroy() {
-    console.log('igLoading $destroy');
+    $element.off('click');
   }
 
   /**
    * Show loading
    */
   function show() {
-    $ionicLoading.show(DEFAULT_LOADING_OPTIONS);
+    $ionicLoading.show($scope.ig);
+
+    // console.log('show', $scope, $element);
+
+    if ($scope.ig.hideOn > 0) {
+      $timeout(hide, $scope.ig.hideOn);
+    }
   }
 
   /**
@@ -47,7 +60,7 @@ function IGButtonLoadingController($scope, $state, $timeout, $ionicLoading) {
   /**
    * Hide loading
    */
-  function hideLoading() {
-    $ionicLoading.show();
+  function hide() {
+    $ionicLoading.hide();
   }
 }

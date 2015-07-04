@@ -7,13 +7,16 @@
 
     <h1>{{ title }}</h1>
 
-    <ig-loading class="button button-positive button-full">
+    <ig-loading hide-on="2500" class="button button-positive button-full">
       Show Basic Loading
     </ig-loading>
 
-
-    <ig-loading no-backdrop="true" ui-sref="app.comeBack()" class="button button-positive button-full">
+    <ig-loading no-backdrop="true" hide-on="2500" class="button button-positive button-full">
       Show with no backdrop
+    </ig-loading>
+
+    <ig-loading hide-on-state-change="true" wait="2000" and-go="app.comeBack" hide-on="3500" class="button button-positive button-full">
+      Hide on State Change
     </ig-loading>
   </ion-content>
 </ion-view>
