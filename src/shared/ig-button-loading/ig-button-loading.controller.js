@@ -1,5 +1,5 @@
 angular
-  .module('starter.shared.ig-button-loading.controller', [])
+  .module('ionicGarden.shared.ig-button-loading.controller', [])
   .controller('IGButtonLoadingController', IGButtonLoadingController);
 
 IGButtonLoadingController.$inject = ['$scope', '$element', '$state', '$timeout', '$ionicLoading'];

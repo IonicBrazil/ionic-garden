@@ -1,5 +1,5 @@
 angular
-  .module('starter.state.single.controller', [])
+  .module('ionicGarden.state.single.controller', [])
   .controller('SingleController', SingleController);
 
 SingleController.$inject = ['$state'];

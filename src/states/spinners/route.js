@@ -1,5 +1,5 @@
 angular
-  .module('starter.state.spinners', ['starter.state.spinners.controller'])
+  .module('ionicGarden.state.spinners', ['ionicGarden.state.spinners.controller'])
   .config(configRefresher);
 
 /**

@@ -1,5 +1,5 @@
 angular
-  .module('starter.state.loading.controller', [])
+  .module('ionicGarden.state.loading.controller', [])
   .controller('LoadingController', LoadingController);
 
 LoadingController.$inject = ['$scope', '$state', '$timeout', '$ionicLoading'];

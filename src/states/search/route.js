@@ -1,5 +1,5 @@
 angular
-  .module('starter.state.search', [])
+  .module('ionicGarden.state.search', [])
   .config(configSearch);
 
 /**

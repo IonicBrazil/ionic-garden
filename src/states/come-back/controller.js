@@ -1,5 +1,5 @@
 angular
-  .module('starter.state.come-back.controller', [])
+  .module('ionicGarden.state.come-back.controller', [])
   .controller('ComeBackController', ComeBackController);
 
 ComeBackController.$inject = ['$scope', '$timeout', '$ionicHistory'];

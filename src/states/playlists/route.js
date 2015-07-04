@@ -1,5 +1,5 @@
 angular
-  .module('starter.state.playlists', ['starter.state.playlists.controller'])
+  .module('ionicGarden.state.playlists', ['ionicGarden.state.playlists.controller'])
   .config(configPlaylists);
 
 /**

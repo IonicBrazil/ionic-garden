@@ -1,5 +1,5 @@
 angular
-  .module('starter.state.refresher.controller', [])
+  .module('ionicGarden.state.refresher.controller', [])
   .controller('RefresherController', RefresherController);
 
 RefresherController.$inject = ['$scope', '$state', '$timeout'];

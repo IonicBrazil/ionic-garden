@@ -1,5 +1,5 @@
 angular
-  .module('starter.state.refresher', ['starter.state.refresher.controller'])
+  .module('ionicGarden.state.refresher', ['ionicGarden.state.refresher.controller'])
   .config(configRefresher);
 
 /**

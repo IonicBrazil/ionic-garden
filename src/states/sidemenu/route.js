@@ -1,5 +1,5 @@
 angular
-  .module('starter.state.sidemenu', ['starter.state.sidemenu.controller'])
+  .module('ionicGarden.state.sidemenu', ['ionicGarden.state.sidemenu.controller'])
   .config(configSidemenu);
 
 /**

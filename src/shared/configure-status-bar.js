@@ -1,5 +1,5 @@
 angular
-  .module('starter.configureStatusBar', [])
+  .module('ionicGarden.configureStatusBar', [])
   .run(configStatusBar);
 
 /**

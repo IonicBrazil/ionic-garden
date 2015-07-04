@@ -1,5 +1,5 @@
 angular
-  .module('starter.state.index', [])
+  .module('ionicGarden.state.index', [])
   .config(configIndex);
 
 /**

@@ -1,5 +1,5 @@
 angular
-  .module('starter.state.come-back', ['starter.state.come-back.controller'])
+  .module('ionicGarden.state.come-back', ['ionicGarden.state.come-back.controller'])
   .config(configComeBack);
 
 /**

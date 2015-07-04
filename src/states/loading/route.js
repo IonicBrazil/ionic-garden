@@ -1,7 +1,7 @@
 angular
-  .module('starter.state.loading', [
-    'starter.state.loading.controller',
-    'starter.shared.ig-button-loading'
+  .module('ionicGarden.state.loading', [
+    'ionicGarden.state.loading.controller',
+    'ionicGarden.shared.ig-button-loading'
   ]).config(configRefresher);
 
 /**

@@ -1,5 +1,5 @@
 angular
-  .module('starter.state.sidemenu.controller', [])
+  .module('ionicGarden.state.sidemenu.controller', [])
   .controller('SidemenuController', SidemenuController);
 
 SidemenuController.$inject = ['$scope', '$ionicModal', '$timeout'];

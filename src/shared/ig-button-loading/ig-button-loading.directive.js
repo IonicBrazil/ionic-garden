@@ -1,7 +1,7 @@
 angular
-  .module('starter.shared.ig-button-loading', [
-    'starter.shared.ig-button-loading.controller',
-    'starter.shared.wait'
+  .module('ionicGarden.shared.ig-button-loading', [
+    'ionicGarden.shared.ig-button-loading.controller',
+    'ionicGarden.shared.wait'
   ])
   .directive('igLoading', igLoading);
 

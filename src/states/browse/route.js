@@ -1,5 +1,5 @@
 angular
-  .module('starter.state.browse', [])
+  .module('ionicGarden.state.browse', [])
   .config(configBrowse);
 
 /**

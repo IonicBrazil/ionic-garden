@@ -1,5 +1,5 @@
 angular
-  .module('starter.shared.wait', [])
+  .module('ionicGarden.shared.wait', [])
   .directive('wait', ['$timeout', '$state', Wait]);
 
 /**

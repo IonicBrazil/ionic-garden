@@ -1,5 +1,5 @@
 angular
-  .module('starter.state.infinite-scroll.controller', [])
+  .module('ionicGarden.state.infinite-scroll.controller', [])
   .controller('InfiniteScrollController', InfiniteScrollController);
 
 InfiniteScrollController.$inject = ['$scope', '$state', '$timeout'];

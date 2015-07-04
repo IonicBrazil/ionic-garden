@@ -1,5 +1,5 @@
 angular
-  .module('starter.configureKeyBoard', [])
+  .module('ionicGarden.configureKeyBoard', [])
   .run(configKeyBoard);
 
 /**

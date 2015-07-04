@@ -1,16 +1,16 @@
-angular.module('starter', [
+angular.module('ionicGarden', [
   'ionic',
-  'starter.configureKeyBoard',
-  'starter.configureStatusBar',
-  'starter.state.sidemenu',
-  'starter.state.search',
-  'starter.state.browse',
-  'starter.state.playlists',
-  'starter.state.single',
-  'starter.state.index',
-  'starter.state.infinite-scroll',
-  'starter.state.refresher',
-  'starter.state.spinners',
-  'starter.state.come-back',
-  'starter.state.loading'
+  'ionicGarden.configureKeyBoard',
+  'ionicGarden.configureStatusBar',
+  'ionicGarden.state.sidemenu',
+  'ionicGarden.state.search',
+  'ionicGarden.state.browse',
+  'ionicGarden.state.playlists',
+  'ionicGarden.state.single',
+  'ionicGarden.state.index',
+  'ionicGarden.state.infinite-scroll',
+  'ionicGarden.state.refresher',
+  'ionicGarden.state.spinners',
+  'ionicGarden.state.come-back',
+  'ionicGarden.state.loading'
 ]);

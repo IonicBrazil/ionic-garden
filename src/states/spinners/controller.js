@@ -1,5 +1,5 @@
 angular
-  .module('starter.state.spinners.controller', [])
+  .module('ionicGarden.state.spinners.controller', [])
   .controller('SpinnersController', SpinnersController);
 
 SpinnersController.$inject = ['$scope', '$state', '$timeout'];

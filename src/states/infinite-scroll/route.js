@@ -1,5 +1,5 @@
 angular
-  .module('starter.state.infinite-scroll', ['starter.state.infinite-scroll.controller'])
+  .module('ionicGarden.state.infinite-scroll', ['ionicGarden.state.infinite-scroll.controller'])
   .config(configInfiniteScroll);
 
 /**

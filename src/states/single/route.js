@@ -1,5 +1,5 @@
 angular
-  .module('starter.state.single', ['starter.state.single.controller'])
+  .module('ionicGarden.state.single', ['ionicGarden.state.single.controller'])
   .config(configSingle);
 
 /**
