@@ -2,16 +2,15 @@ angular
   .module('starter.state.come-back.controller', [])
   .controller('ComeBackController', ComeBackController);
 
-ComeBackController.$inject = ['$timeout', '$ionicHistory'];
+ComeBackController.$inject = ['$scope', '$timeout', '$ionicHistory'];
 
 /**
  * Define Come Back Controller
  */
-function ComeBackController($timeout, $ionicHistory) {
-  var vm = this;
-  vm.title = 'Wait a second';
+function ComeBackController($scope, $timeout, $ionicHistory) {
+  $scope.title = 'Wait a second';
 
-  vm.$on('$ionicView.enter', returnAfter2Seconds);
+  $scope.$on('$ionicView.enter', returnAfter2Seconds);
 
   /**
    * Return to previous view after two seconds in the current view

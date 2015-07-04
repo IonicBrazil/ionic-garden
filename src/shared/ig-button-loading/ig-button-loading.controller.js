@@ -17,7 +17,6 @@ var DEFAULT_LOADING_OPTIONS = {
 function IGButtonLoadingController($scope, $state, $timeout, $ionicLoading) {
 
   $scope.ig = $scope.ig;
-  console.log($scope.ig);
 
   $scope.$on('$destroy', destroy);
 
