@@ -16,6 +16,7 @@ Install dependencies
 
 ```sh
 npm install -d
+bower install
 ```
 
 Run the project on your browser
