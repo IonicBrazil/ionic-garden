@@ -9,25 +9,35 @@ var DEFAULT_LOADING_OPTIONS = {
   hideOnStateChange: false,
   delay: 0,
   duration: undefined
-}
+};
 
 /**
  * Controller Definition
  */
 function IGButtonLoadingController($scope, $state, $timeout, $ionicLoading) {
 
-  console.log($scope.ig);
-  $scope.ig = ionic.extend(DEFAULT_LOADING_OPTIONS, $scope.ig);
+  $scope.ig = $scope.ig;
   console.log($scope.ig);
 
-  $scope.$on('$destroy', function () {
+  $scope.$on('$destroy', destroy);
+
+  /**
+   * Scope Destroy
+   */
+  function destroy() {
     console.log('igLoading $destroy');
-  });
+  }
 
+  /**
+   * Show loading
+   */
   function show() {
     $ionicLoading.show(DEFAULT_LOADING_OPTIONS);
   }
 
+  /**
+   * Show loading with no backdrop option
+   */
   function showNoBackdrop() {
     $ionicLoading.show({
       template: $scope.title,
@@ -35,6 +45,9 @@ function IGButtonLoadingController($scope, $state, $timeout, $ionicLoading) {
     });
   }
 
+  /**
+   * Hide loading
+   */
   function hideLoading() {
     $ionicLoading.show();
   }

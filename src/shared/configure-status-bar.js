@@ -13,7 +13,7 @@ function configStatusBar($ionicPlatform) {
    */
   function platformReady() {
     if (window.StatusBar) {
-      StatusBar.styleDefault()
+      StatusBar.styleDefault();
     }
   }
 }
