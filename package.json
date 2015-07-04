@@ -26,7 +26,10 @@
     "gulp-jshint": "^1.7.1",
     "gulp-autoprefixer": "^1.0.1",
     "gulp-plumber": "^0.6.6",
-    "jscs-jsdoc": "^1.1.x"
+    "jscs-jsdoc": "^1.1.x",
+    "gulp-header": "^1.2.x",
+    "gulp-footer": "^1.0.x",
+    "gulp-inject": "^1.3.x"
   },
   "scripts": {
     "postinstall": "bower install && gulp install-source-modules",

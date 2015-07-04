@@ -49,6 +49,7 @@
   "requireSemicolons": true,
   "requireParenthesesAroundIIFE": true,
   "validateIndentation": 2,
+  "disallowAnonymousFunctions": true,
   "plugins": [
     "jscs-jsdoc"
   ],
