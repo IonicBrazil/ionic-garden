@@ -4,6 +4,7 @@ var minifyCss = require('gulp-minify-css');
 var rename = require('gulp-rename');
 var autoprefixer = require('gulp-autoprefixer');
 var plumber = require('gulp-plumber');
+var connect = require('gulp-connect');
 var config = require('../config').common;
 
 gulp.task('styles', function(done) {
@@ -17,5 +18,6 @@ gulp.task('styles', function(done) {
     .pipe(minifyCss())
     .pipe(rename({ extname: '.min.css' }))
     .pipe(gulp.dest(config.destCSS))
+    .pipe(connect.reload())
     .on('end', done);
 });

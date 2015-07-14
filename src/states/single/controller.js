@@ -10,5 +10,7 @@ SingleController.$inject = ['$state'];
 function SingleController($state) {
   var vm = this;
 
+  vm.title = 'Playlist';
+
   vm.id = $state.params.singleId;
 }

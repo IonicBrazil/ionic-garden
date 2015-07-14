@@ -15,15 +15,16 @@ gulp.task('serve', ['build-dev'], function() {
     root: 'www/',
     livereload: true
   });
+
+  gulp.start('watch-dev');
 });
 
 gulp.task('watch-dev', function(done) {
-  // gulp.watch(config.allSCSSFiles, ['styles']);
-  // gulp.watch(config.allStaticFiles, ['source']);
+  gulp.watch(config.allSCSSFiles, ['styles']);
+  gulp.watch(config.allStaticFiles, ['build-dev:copy-lib']);
   gulp.watch(config.allJSFiles, ['build-dev:prepare-javascript']);
-  gulp.watch(config.allTemplates, ['build-dev:copy-templates']);
-  // gulp.watch(config.allTemplates, ['source']);
+  gulp.watch(config.allTemplates, ['build-dev:prepare-templates']);
 
-  // var child = exec('node ./scripts/watch/watch.js')
+  var child = exec('node ./scripts/watch/watch.js')
   // child.stdout.on('data', console.log)
 });
